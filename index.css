@@ -1,0 +1,96 @@
+/*--------UNIVERSAL-----------*/
+/*-----------HIJAU ORANGE= BIRU -----------------*/
+*,html,body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+    color: white;
+    overflow-x: hidden;
+    font-size: 20px;
+}
+
+:root{
+    --biru-tua: #5670FF;
+    --biru-muda: #93D8F8;
+    --oren: #ff8750;
+    --hijau: #DCE5BA;
+}
+.page{
+    justify-content: center;
+    display: flex;    
+    flex-direction: column; 
+    width:100%;
+    height:100vh;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+/*--------------Pages--------------------*/
+.one{
+    background-image: url('/images/BackgroundImage.jpg');  /*sumber freepik.com*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items:center;
+}
+.two{
+    background-color: #5A42EE;
+}
+
+/*--------------TopNavbar--------------------*/
+
+.TopNavigation{
+    display: flex;
+    width:100%;
+    padding:0 10px;
+    margin:0 auto;
+    justify-content: space-between;
+    align-items: center;
+    /* border:1px solid black; */
+    position: absolute;
+    top:0;
+    padding:0;
+}
+.logo img{
+position: relative;
+   margin:15px;
+   height:130px;
+   width:110px;
+   
+}
+
+.links{
+    margin: 0 10px;
+    padding: 0 3rem 3rem 0; 
+    /* border: 5px solid black; */
+    font-size: 2rem;
+    display: flex;
+    
+}
+.links *{
+    margin: 0 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
+/*--------------Title--------------------*/
+
+.title{
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 5rem;
+    font-weight: 600;
+}
+h2{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+
