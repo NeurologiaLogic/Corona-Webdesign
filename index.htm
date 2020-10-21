@@ -10,7 +10,12 @@
     <!---Links-->
     <link rel = 'icon' type='png' href = '../images/3.png'>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./OwlCarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./OwlCarousel/owl.carousel.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+
 </head>
 <body>
     <section class = 'page one'>
@@ -20,9 +25,9 @@
                 <img src='./images/3.png' alt="Corona ">
             </div>
             <div class="links">
-                <div id="home">Home</div>
-                <div id="condition">Condition</div>
-                <div id="about-us">About Us</div>
+                <div id="home"><a>Home<a></div>
+                <div id="condition"><a>Condition</a></div>
+                <div id="about-us"><a>About Us</a></div>
             </div>
         </nav>
         <div class="Title">
@@ -32,6 +37,18 @@
     </section>
 
     <section class = 'page two'>
+
+        <div class="SearchBar"></div>
+        <div class="owl-carousel owl-theme slider">
+        <div class="cards"></div>
+        <div class="cards"></div>
+        <div class="cards"></div>
+        </div>
+         
+
+    </section>
+
+    <section class = 'page three'>
 
     </section>
         <!-- <div class="box">
@@ -44,9 +61,9 @@
 
 <!--Scripts-->
 <script src="index.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/9cdc4a3ec7.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+<script src="./OwlCarousel/owl.carousel.min.js"></script>
 </html>
 
 

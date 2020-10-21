@@ -8,6 +8,9 @@
     color: white;
     overflow-x: hidden;
     font-size: 20px;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
 }
 
 :root{
@@ -36,8 +39,12 @@ body::-webkit-scrollbar{
 }
 .two{
     background-color: #5A42EE;
+    overflow: hidden;
 }
-
+.three{
+    background-color: #6d59ee;
+    overflow: hidden;
+}
 /*--------------TopNavbar--------------------*/
 
 .TopNavigation{
@@ -61,7 +68,7 @@ position: relative;
 }
 
 .links{
-    margin: 0 10px;
+    
     padding: 0 3rem 3rem 0; 
     /* border: 5px solid black; */
     font-size: 2rem;
@@ -69,12 +76,15 @@ position: relative;
     
 }
 .links *{
-    margin: 0 10px;
+    margin:5px;
     font-size: 1.5rem;
     font-weight: 600;
 }
 
-
+a:hover{
+    transition:0.1s;
+    color: black;
+}
 /*--------------Title--------------------*/
 
 .title{
@@ -93,4 +103,34 @@ h2{
 }
 
 
+/*--------------PAGE2--------------------*/
+.slider{
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    overflow: hidden;
+    width:300%;
+    height:100vh;
+    padding: 100px;
+}
 
+.owl-carousel{
+    height: 100vh;
+    margin-top: 30vh;
+    border: 10px solid black;
+   
+}
+.cards {
+  position: static;
+  width: 300px;
+  height: 300px;
+  background-color: #fff;
+  display:flex;
+  border-radius: 17px;
+  
+}
+.cards:hover{
+
+    transition: 0.5s ease-out;
+    background-color: #93D8F8;
+}
