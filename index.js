@@ -3,8 +3,8 @@
 $(document).ready(function(e){
     
     $('.owl-carousel').owlCarousel({
-        loop:false,
-        rewind:true,
+        loop:true,
+        // rewind:true,
         margin:20,
         center:false,
         autoplayHoverPause:true,

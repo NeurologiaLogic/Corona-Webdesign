@@ -39,8 +39,8 @@ body::-webkit-scrollbar{
 }
 .two{
     background-color: #5A42EE;
+    height:1000px;
     overflow: hidden;
-    height:110vh;
 }
 .three{
     background-color: #6d59ee;
@@ -169,7 +169,7 @@ h2{
 }
 
 .owl-carousel{
-    height: 100vh;
+    height: 2000px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -179,20 +179,23 @@ h2{
 /*--------SEARCHBAR------------*/
 .SearchBar{
     position: relative;
-    left: 43%;
-    height: 300px;
+    left: 40%;
+    height: 600px;
     width: 300px;
     display:flex;
     overflow:hidden;
     flex-direction: column;
-
+    margin: 10px;
 }
 .SearchLabel{
 
 font-size: 2rem;
 text-align: center;
+overflow: hidden;
+
 }
 #SearchInput{
+ 
     color:black;
     font-size: 1.5rem;
     padding: 10px;
@@ -202,23 +205,25 @@ text-align: center;
 
 /*---------NEGARA----*/
 .Negara{
+    margin: 30px 0;
 width: 100%;
 text-align: center;
-line-height: 300px;
-padding-bottom: 3rem;
-align-items: center;
+
 overflow: hidden;
+
+height:500px;
 }
 .negara{
     font-size: 5rem;
+
 }
 
 
 /*--------Cards------------*/
 .cards {
   position:relative;
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   background: linear-gradient(-45deg,rgba(255, 255, 255, 0.452),rgba(255, 255, 255, 0.856));
   display:flex;
   flex-direction: column;
@@ -229,18 +234,13 @@ overflow: hidden;
 
 }
 
-
-
-.cards *{
-    color:black;
-}
-
 /*----inside Card-----*/
  
 .cards-contain{
-    color: black;
-    font-size: 1.5rem;
+    color: white;
+    font-size: 1.8rem;
     text-align:  center;
+
 }
 #result-one, #result-two,#result-three,#result-four,#result-five{
     text-align: center;
@@ -248,25 +248,74 @@ overflow: hidden;
     font-weight: 700;
     transition: 0.3s;
 }
-#result-one{
 
-}
-#result-two{
 
-}
-#result-three{
+/*----------PAGE 3 -------------------*/
 
-}
-#result-four{
-
-}
-#result-five{
-    
+.img{
+    size: 60px;
+    height: 100px;
+    width: 100px;
 }
 
 
 
 
+
+/*-----------Fixed NAVBAR--------------*/
+
+.fixedNavBar{
+    position: fixed;
+    left: 0;
+    top:50%;
+    background-color:none;
+    width: 50px;
+    height:50px;
+    z-index:1000;
+    color: white;
+    display: block;
+    overflow: hidden;
+}
+
+span{
+left:-85px;
+position: relative;
+font-size: 1.4rem;
+}
+
+.prevents{
+    justify-content: center;
+    display: flex;
+}
+.prevents > img{
+    margin: 10px;
+}
+.prevents > img:hover{
+    height: 80px;
+    width:80px;
+    margin:auto;
+}
+
+.fixedNavBar:hover{
+    animation:MovingTab 0.5s forwards;
+}
+@keyframes MovingTab{
+    0%{
+        width:350px;
+    }
+    100%{
+        width:400px;
+        height:400px;
+        transition: 2s;
+
+    }
+
+}
+
+
+.fixedNavBar:hover span{
+left: 100px;    transition: 0.5s;  
+}
 
 
 
@@ -286,6 +335,9 @@ overflow: hidden;
 /*-----------Phone--------------*/
 @media only screen and (max-width:500px){
 
+.negara{
+    font-size: 1.5rem;
+}
 .sticky{
         display: none;
     }
