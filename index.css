@@ -174,6 +174,7 @@ h2{
     display: flex;
     flex-direction: row;
     margin:0 auto;
+    align-items: center;
 }
 
 /*--------SEARCHBAR------------*/
@@ -205,7 +206,7 @@ overflow: hidden;
 
 /*---------NEGARA----*/
 .Negara{
-    margin: 30px 0;
+margin: 30px 0;
 width: 100%;
 text-align: center;
 
@@ -215,7 +216,7 @@ height:500px;
 }
 .negara{
     font-size: 5rem;
-
+    left:10px;
 }
 
 
@@ -314,7 +315,8 @@ font-size: 1.4rem;
 
 
 .fixedNavBar:hover span{
-left: 100px;    transition: 0.5s;  
+left: 100px;    
+transition: 0.5s;  
 }
 
 
@@ -336,7 +338,13 @@ left: 100px;    transition: 0.5s;
 @media only screen and (max-width:500px){
 
 .negara{
-    font-size: 1.5rem;
+    font-size: 2rem;
+    left:3px;
+}
+.Negara{
+    width:100%;
+    display: flex;
+    justify-content: center;
 }
 .sticky{
         display: none;
@@ -344,6 +352,7 @@ left: 100px;    transition: 0.5s;
 .logo{
     display:none
 }
+
 
 .links a{
     margin:5px;
@@ -363,7 +372,7 @@ h2{
 }
 .cards{
     width: 50px;
-    height: 100px;
+    height: 50px;
 }
 
 .SearchBar{
@@ -375,15 +384,13 @@ h2{
 #SearchInput{
     height: 70px;
 }
+
+.slider{
+    left:-30px;
+}
+.cards{
+    height:200px;
+    width:200px;
+}
 }
 
-@media only screen and (max-width:720px){
-    .cards{
-        width: 300px;
-      height: 300px;
-    }
-
-    .slider{
-        margin: 30px
-    }
-}
