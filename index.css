@@ -238,6 +238,8 @@ height:1100px;
 
 }
 
+
+
 /*----inside Card-----*/
  
 .cards-contain{
@@ -490,6 +492,29 @@ h2{
 .cards{
     height:200px;
     width:200px;
+    left: 50px;
 }
+
+#result-one, #result-two,#result-three,#result-four,#result-five{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition: 0.3s;
 }
+p{
+    font-size: 0.5rem;
+}
+.footerbottom{
+    height:200px
+}
+
+#footer{
+    height:500px;
+}
+.containers{
+    height: 300px;
+}
+
+}
+
 
