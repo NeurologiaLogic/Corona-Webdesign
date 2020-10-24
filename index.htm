@@ -8,7 +8,7 @@
     <title>Landingpage</title>
 
     <!---Links-->
-    <link rel = 'icon' type='png' href = './images/3.png'>
+    <link rel = 'icon' type='png' href = './images/logo.png'>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="./OwlCarousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="./OwlCarousel/owl.carousel.css">
@@ -27,21 +27,23 @@
             <div class="links">
                 <div id="home"><a href ='#page-one'>Home</a></div>
                 <div id="condition"><a href ='#page-two'>Condition</a></div>
-                <div id="about-us"><a href ='#page-three'>About Us</a></div>
+                <div id="about-us"><a href ='#footer'>About Me</a></div>
             </div>
         </nav>
         <div class="Title">
             <h1>Corona Virus.</h1>
             <h2>Breakout 2020</h2>
+
         </div>
     </section>
 
     <section class = 'page two' id='page-two'>
+            <div class="SearchBar">
+                <label for="SearchInput" class ='SearchLabel'>SearchBar</label>
+                <input type="text" name="Search" id="SearchInput" placeholder = 'Search A Country'>
+            </div>
+       
 
-        <div class="SearchBar">
-            <label for="SearchInput" class ='SearchLabel'>SearchBar</label>
-            <input type="text" name="Search" id="SearchInput" placeholder = 'Search A Country'>
-        </div>
         <div class="Negara">
             <span class ='negara'></span>
         </div>
@@ -81,10 +83,55 @@
 
       
     </section>
-    <footer id = 'about-us'>
-        <div class="container">
+    <footer id = 'footer'>
+
+        <div class="containers">
+            <div class="container about">
+                <br>
+                <h3>About Me</h3>
+                <ul>
+                    <li><p>Hello there my name is patrick.<br> This Website was made for intech Web Design Competition<br>
+                    Although, this website was far from perfect because<br> of my limitation of knowledge,<br> i am still grateful that i was able to complete the web</p> 
+                     </li>      
+              
+                <div class="socialMedia">
+                        <li>
+                        <a href="https://www.facebook.com/profile.php?id=100010001228927"><i class="fab fa-facebook-square"></i></a>
+                        </li>
+                        <li>
+                        <a href="https://steamcommunity.com/id/Rexter580"><i class="fab fa-steam"></i></a>
+                        </li>
+                        <li>
+                        <a href="https://www.instagram.com/patrickwon_/"><i class="fab fa-instagram-square"></i></a>
+                        </li>
+                </div>
+                </ul>
+            </div>
+            <div class="container sponsor">
+                <br>
+                <h3>Special Thanks to</h3>
+                <ul class = 'left-sponsor'>
+                    <img src="./images/Sponsorship/byu.png" alt="byu">
+                    <img src="./images/Sponsorship/dicoding.png" alt="byu">
+               </ul>
+                <ul class = 'right-sponsor'>
+                <img src="./images/Sponsorship/niagahoster.png" alt="byu">
+                <img src="./images/Sponsorship/sklb.png" alt="byu">
+                </ul>
+            </div>
+            <!-- <div class="container follow-us">
+               <br>
+                <h3>Contact Center</h3>
+                <form action="#" method="post">
+                    <input type="text"placeholder = "Email">
+                    <input type='text' placeholder="Descriptions">
+                 
+                </form>
+            </div> -->
             
-            
+        </div>
+        <div class="footerbottom">
+            Copyright &copy; Website Design By Patrick Kwon
         </div>
     </footer>
     

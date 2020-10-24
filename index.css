@@ -11,6 +11,7 @@
     outline: none;
     list-style: none;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -38,13 +39,19 @@ body::-webkit-scrollbar{
     align-items:center;
 }
 .two{
-    background-color: #5A42EE;
+    background:#5A42EE;
     height:1000px;
     overflow: hidden;
 }
 .three{
-    background-color: #6d59ee;
+    background:#6d59ee;
     height:100vh;
+}
+#footer{
+    height: 400px;
+    background-color:#303036;
+    color:#d3d3d3;
+    position: relative;
 }
 /*--------------TopNavbar--------------------*/
 
@@ -139,24 +146,17 @@ h2{
     text-align: center;
     font-weight: 500;
 }
-
-
-/*-------Social Media----------*/
-.socialMedia{
-    height:auto;
-    width:auto;
-    position: absolute;
-    bottom: 0;
-    left:0;
-    display:flex;
-    flex-direction: column;
+h3{
+    font-weight: 100;
+    font-size: 1.2rem;
+    margin:10px;
 }
-.icons{
-    width: auto;
-    height:auto;
-    border: 1px solid black;
-}
+p{
+    font-size: 1rem;
+    text-align: center
+ 
 
+}
 
 
 /*--------------PAGE2--------------------*/
@@ -169,7 +169,7 @@ h2{
 }
 
 .owl-carousel{
-    height: 2000px;
+    height: 4000px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -178,15 +178,18 @@ h2{
 }
 
 /*--------SEARCHBAR------------*/
+
 .SearchBar{
     position: relative;
-    left: 40%;
-    height: 600px;
+    top:60PX;
+    left: 38%;
+    height: 800px;
     width: 300px;
     display:flex;
     overflow:hidden;
     flex-direction: column;
-    margin: 10px;
+    margin: 20px;
+    
 }
 .SearchLabel{
 
@@ -212,11 +215,11 @@ text-align: center;
 
 overflow: hidden;
 
-height:500px;
+height:1100px;
 }
 .negara{
     font-size: 5rem;
-    left:10px;
+    left:-7px;
 }
 
 
@@ -263,7 +266,7 @@ height:500px;
 
 
 
-/*-----------Fixed NAVBAR--------------*/
+/*-----------HIDDEN EASTER EGG, Hover your mouse around the screen--------------*/
 
 .fixedNavBar{
     position: fixed;
@@ -312,16 +315,110 @@ font-size: 1.4rem;
     }
 
 }
-
-
 .fixedNavBar:hover span{
 left: 100px;    
 transition: 0.5s;  
 }
+/*-------------------Footer---------------------*/
+#footer .containers{
+height: 350px;
+width: 100%;
+display: flex;
+}  
+#footer .container{
 
+flex-grow: 1;
 
+text-align: center;
+}
+.about{
+    overflow: hidden;
+}
 
+/*-------Social Media----------*/
 
+.socialMedia {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.socialMedia li{
+    margin: 20px;
+}
+.socialMedia li .fab{
+    font-size: 30px;
+}
+
+.socialMedia li .fab:hover{
+    color:red;
+    transform: translate(1.1);
+}
+#footer .footerbottom{
+    position: absolute;
+    height:50px;
+    background: #343a40;
+    color: #d3d3d3;
+    text-align: center;
+    bottom : 0;
+    left:0;
+    width: 100%;
+    padding-top:10px;
+}
+.sponsor{
+    overflow: hidden;
+}
+.sponsor ul{
+    display: flex;
+    flex-direction: row;
+    position: relative;align-items: center;
+    justify-content: center;
+}
+.sponsor ul img{
+    width:100px;
+    height:50px;
+    margin:10px;
+   
+
+}
+.sponsor ul img:nth-child(1){
+    width:100px;
+    height:100px;
+    
+}
+.sponsor ul img:nth-child(2){
+    width:150px;
+    height:50px;
+    margin-top:20px
+}
+.sponsor .right-sponsor img:nth-child(1){
+    width:200px;
+    height:40px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+form input{
+    position: relative;
+    width:200px;
+    left:60px;
+    justify-content: center;
+    background-color: #384279;
+    outline-style: none;
+    color: white;
+}
+form input:nth-child(2) {
+    position: relative;
+    margin-top: 5px;
+    width:200px;
+    height:100px;
+    left:60px;
+    justify-content: center;
+    background-color: #384279;
+}
 
 /*-----------MEDIA QUERY--------------*/
 
@@ -370,13 +467,15 @@ h2{
     text-align: center;
     font-weight: 500;
 }
+
+
 .cards{
     width: 50px;
     height: 50px;
 }
 
 .SearchBar{
-    left: 10%;
+    left: 7%;
 }
 .SearchLabel{
     font-size: 1rem;

@@ -3,7 +3,7 @@
 $(document).ready(function(e){
     
     $('.owl-carousel').owlCarousel({
-        loop:true,
+        loop:false,
         // rewind:true,
         margin:20,
         center:false,
@@ -16,7 +16,7 @@ $(document).ready(function(e){
             },
             
             1000:{
-                items:2
+                items:3
             }
         }
     })
@@ -87,17 +87,17 @@ async function getRepos(){
 
 
 //Scroll
-
+document.read
 $('.links').on('click',function(e){
 
-    if(this.hash != ''){
+    if(e.hash != ''){
         e.preventDefaultBehaviour()
     
     const hash = this.hash
 
     $('html,body').animate({
         scrollTop: $(hash).offset().top
-    },1000)
+    },100)
     }
 
 })
