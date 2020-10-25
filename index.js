@@ -15,7 +15,7 @@ $(document).ready(function(e){
                 nav:true
             },
             500:{
-                items:2
+                items:1
             },
             1000:{
                 items:3
@@ -42,7 +42,9 @@ let libur = new Date('3/16/2020').getTime();
 let now = new Date().getTime();
 let datenow =`${Math.floor(now - libur)/ (1000 * 3600 * 24)}`.slice(0,3);
 
+let school = document.querySelector('.days')
 
+school.innerHTML = `Last School: ${datenow} days ago`
 //DOCUMENT
 
 //ISI KOTAK
