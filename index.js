@@ -82,16 +82,14 @@ async function getRepos(){
     const result = await response.json();
     //add values here
     negara.innerHTML=SearchInputValue
-     Box1.innerHTML=result.confirmed.value;
-     Box2.innerHTML=result.recovered.value;
-     Box3.innerHTML=result.deaths.value;
+     Box1.innerHTML=result.confirmed.value.toLocaleString('de-DE');
+     Box2.innerHTML=result.recovered.value.toLocaleString('de-DE');
+     Box3.innerHTML=result.deaths.value.toLocaleString('de-DE');
      Box4.innerHTML=(result.lastUpdate).slice(0,10);
-
 }
 
 
 //Scroll
-document.read
 $('.links').on('click',function(e){
 
     if(e.hash != ''){
@@ -101,7 +99,7 @@ $('.links').on('click',function(e){
 
     $('html,body').animate({
         scrollTop: $(hash).offset().top
-    },100)
+    },500)
     }
 
 })
